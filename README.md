@@ -47,3 +47,8 @@ The simulation assumes a 70% efficiency for the fuel cell stack.
 Also, the PEM material assumed is Nafion.
 
 For any questions or issues, feel free to reach out. Happy simulating! 😊🔬
+
+## References: 
+Modeling and Analysis of Renewable PEM Fuel Cell System 
+by, Eng. Waseem Saeeda, Dr. Eng. Ghaith Warkozekb 
+[https://doi.org/10.1016/j.egypro.2015.07.527](url)
