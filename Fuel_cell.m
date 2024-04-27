@@ -1,5 +1,5 @@
 clear all
-clc
+%clc
 
 N=100;
 T=343;
@@ -23,15 +23,12 @@ b=1.5;
 
 Cell_voltage= fc(T,A,l,Ph2,Po2,Ph2o,Rc,B,eta,phi,iL,a,b,N);
 
-%considering 70% efficiency
-
-Cell_voltage=0.7*Cell_voltage;
 
 subplot(1,2,1)
 ifc=0:a:b;
 plot(ifc,Cell_voltage)
-xlim([0 1.6])
-ylim([70 150])
+% xlim([0 1.6])
+% ylim([70 150])
 xlabel('stack current A/cm^2')
 ylabel('stack voltage V')
 title('IV-curve')
@@ -61,7 +58,7 @@ disp(u(2))
 required_power_output=1000;
 u_=utilization(Power,A,Cell_voltage,ifc,i,N);
 
-disp("To attain a Power Output of 1000 at 70% efficiency")
+disp("To attain a Power Output of 1000")
 
 disp('O2 required in mol/hr')
 disp(u_(1)*1000/3600*P)
